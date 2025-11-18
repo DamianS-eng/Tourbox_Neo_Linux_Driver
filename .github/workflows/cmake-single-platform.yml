@@ -30,4 +30,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Tourbox_Linux_Driver
-        path: Tourbox_Linux_Driver
+        path: cpp/Tourbox_Linux_Driver
