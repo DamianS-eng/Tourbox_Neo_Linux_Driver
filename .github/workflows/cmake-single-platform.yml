@@ -21,6 +21,9 @@ jobs:
         mkdir -p ${{github.workspace}}/build
         cmake CMakeLists.txt
     - name: Build
-      run: make
+      run: |
+        pwd
+        ls
+        make
 
 
