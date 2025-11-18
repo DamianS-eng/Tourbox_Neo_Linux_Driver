@@ -17,6 +17,7 @@ jobs:
       # cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} CMakeLists.txt
       run: |
         ls
+        cd cpp
         mkdir -p ${{github.workspace}}/build
         cmake CMakeLists.txt
     - name: Build
