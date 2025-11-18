@@ -22,7 +22,7 @@ jobs:
         cmake CMakeLists.txt
     - name: Build
       run: |
-        pwd
+        cd cpp
         ls
         make
 
