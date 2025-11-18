@@ -24,10 +24,8 @@ jobs:
       run: |
         cd cpp
         make
-        ls
-        ls ../
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: Tourbox_Linux_Driver
-        path: cpp/Tourbox_Linux_Driver
+        path: ${{github.workspace}}/cpp/Tourbox_Linux_Driver
