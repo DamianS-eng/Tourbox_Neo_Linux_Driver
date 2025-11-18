@@ -23,7 +23,11 @@ jobs:
     - name: Build
       run: |
         cd cpp
-        ls
         make
-
-
+        ls
+        ls ../
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Tourbox_Linux_Driver
+        path: Tourbox_Linux_Driver
